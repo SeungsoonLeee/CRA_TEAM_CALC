@@ -1,4 +1,4 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "../Project21/Calculator.cpp"
 
 TEST(getMinusTest, POSITIVE_RESULT) {
@@ -31,4 +31,14 @@ TEST(TestCaseName, TestSumSum) {
 
 	EXPECT_EQ(8, c.getSumSum(1, 3));
 	EXPECT_EQ(26, c.getSumSum(5, 8));
+}
+
+TEST(CalculatorTest, getZegop) {
+	Calculator calc;
+	EXPECT_EQ(1, calc.getZegop(1, 1));
+	EXPECT_EQ(1, calc.getZegop(1, 2));
+	EXPECT_EQ(2, calc.getZegop(2, 1));
+	EXPECT_EQ(4, calc.getZegop(2, 2));
+	EXPECT_EQ(8, calc.getZegop(2, 3));
+	EXPECT_EQ(16, calc.getZegop(2, 4));
 }
