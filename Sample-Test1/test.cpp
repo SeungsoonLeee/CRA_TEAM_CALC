@@ -15,3 +15,10 @@ TEST(TestCaseName, TestGop) {
 	EXPECT_EQ(9, c.getGop(3, 3));
 	EXPECT_EQ(1, c.getGop(1, 1));
 }
+
+TEST(TestCaseName, TestSumSum) {
+	Calculator c;
+
+	EXPECT_EQ(8, c.getSumSum(1, 3));
+	EXPECT_EQ(26, c.getSumSum(5, 8));
+}
