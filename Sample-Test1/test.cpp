@@ -1,9 +1,14 @@
 #include "pch.h"
 #include "../Project21/Calculator.cpp"
 
-TEST(TestCaseName, TestName) {
-	EXPECT_EQ(1, 1);
-	EXPECT_TRUE(true);
+TEST(getMinusTest, POSITIVE_RESULT) {
+	Calculator calc;
+	EXPECT_EQ(1, calc.getMinus(2, 1));
+}
+
+TEST(getMinusTest, NEGATIVE_RESULT) {
+	Calculator calc;
+	EXPECT_EQ(-1, calc.getMinus(2, 3));
 }
 
 TEST(TestCaseName, TestSum) {
